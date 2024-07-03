@@ -1,0 +1,70 @@
+:root {
+  /* Light mode colors */
+  --navBackgroundColor: #f8f7f7;
+  --buttonHoverBackgroundColor: #ffe5ee;
+  --buttonFocusBackgroundColor: #ffc4da;
+  
+  --buttonFocusColor: #ff0e6a;
+  --addTaskButtonColor: #ff0e6a;
+  --textColor: #000;
+  --bodyBackgroundColor: #fff;
+}
+
+[data-theme="dark"] {
+  /* Dark mode overrides */
+  --navBackgroundColor: #363b41;
+  --buttonHoverBackgroundColor: #444;
+  --buttonFocusBackgroundColor: #ff458c;
+  --buttonFocusColor: #c70049;
+  --addTaskButtonColor: #ff0e6a;
+  --textColor: #646464;
+  --bodyBackgroundColor: #2c3338;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  .question-container {
+    margin-bottom: 20px;
+  }
+  .options {
+    margin-bottom: 10px;
+  }
+  label {
+    margin-right: 10px;
+  }
+  input{
+    margin: 5px;
+    font-size:15px;
+    padding:15px;
+    background-color:var(--navBackgroundColor);
+    border:2px solid;
+    border-color:var(--textColor);
+    border-radius:7px;
+  }
+  input:focus
+  {
+    border-color:var(--buttonFocusColor);
+  }
+  /* #quiz-form
+  {
+    margin-left:260px;
+  } */
+  .add-btn
+  {
+    padding: 10px;
+    margin-top: 20px;
+    background: #ff0e81;
+    border: none;
+    border-radius: 7px;
+    color:whitesmoke
+  }
+  .sub-btn
+  {
+    padding: 10px;
+    background: #ff0e81;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    color:white;
+  }

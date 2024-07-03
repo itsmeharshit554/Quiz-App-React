@@ -1,0 +1,70 @@
+:root {
+  /* Light mode colors */
+  --navBackgroundColor: #f8f7f7;
+  --buttonHoverBackgroundColor: #ffe5ee;
+  --buttonFocusBackgroundColor: #ffc4da;
+  
+  --buttonFocusColor: #ff0e6a;
+  --addTaskButtonColor: #ff0e6a;
+  --textColor: #000;
+  --bodyBackgroundColor: #fff;
+}
+
+[data-theme="dark"] {
+  /* Dark mode overrides */
+  --navBackgroundColor: #363b41;
+  --buttonHoverBackgroundColor: #444;
+  --buttonFocusBackgroundColor: #ff458c;
+  --buttonFocusColor: #c70049;
+  --addTaskButtonColor: #ff0e6a;
+  --textColor: #646464;
+  --bodyBackgroundColor: #2c3338;
+}
+
+.card {
+    background-color:var(--navBackgroundColor);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 600px;
+    margin: 20px;
+  }
+  
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:var(--navBackgroundColor);
+    border-radius: 10px;
+  }
+  
+  .card-left h3 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .card-middle p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .card-right .take-quiz-button {
+    background-color: #ff0e6a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-right .take-quiz-button:hover {
+    background-color: #c5004b;
+  }
+  .card-right p
+  {
+    font-size: 16px;
+    font-weight: bold;
+  }

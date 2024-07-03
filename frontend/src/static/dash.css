@@ -1,0 +1,137 @@
+:root {
+    /* Light mode colors */
+    --navBackgroundColor: #f8f7f7;
+    --buttonHoverBackgroundColor: #ffe5ee;
+    --buttonFocusBackgroundColor: #ffc4da;
+    
+    --buttonFocusColor: #ff0e6a;
+    --addTaskButtonColor: #ff0e6a;
+    --textColor: #000;
+    --bodyBackgroundColor: #fff;
+  }
+  
+  [data-theme="dark"] {
+    /* Dark mode overrides */
+    --navBackgroundColor: #363b41;
+    --buttonHoverBackgroundColor: #444;
+    --buttonFocusBackgroundColor: #ff458c;
+    --buttonFocusColor: #c70049;
+    --addTaskButtonColor: #ff0e6a;
+    --textColor: #646464;
+    --bodyBackgroundColor: #2c3338;
+  }
+  
+  body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--textColor);
+    font-family: "Segoe UI", "Helvetica", sans-serif;
+  }
+  
+  nav {
+    width: 250px;
+    height: 100%;
+    background-color: var(--navBackgroundColor);
+    position: fixed;
+    top:0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: block;
+    padding-left: 6px;
+  }
+  
+  nav button {
+    display: block;
+    border: none;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    text-align: left;
+    text-decoration: none;
+    color:var(--textColor);
+    background-color: inherit;
+  }
+  nav button .active {
+    background-color: var(--buttonFocusBackgroundColor);
+    color: var(--buttonFocusColor);
+  }
+  nav button #imp
+  {
+    color:var(--addTaskButtonColor);
+    
+  }
+  
+  nav button:hover {
+    background-color: var(--buttonHoverBackgroundColor);
+    cursor: pointer;
+  }
+  
+  nav ul button:focus {
+    background-color: var(--buttonFocusBackgroundColor);
+    color: var(--buttonFocusColor);
+  }
+ 
+
+  nav svg {
+    margin-right: 2px;
+  }
+  
+  #add-task-btn {
+    color: var(--addTaskButtonColor);
+    font-weight: bold;
+    font-size:20px;
+  }
+  #add-task-btn:hover
+  {
+    color: var(--addTaskButtonColor);
+  }
+  #add-task-btn i {
+    font-size: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu p {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    font-weight: 500;
+  }
+  
+  .menu button {
+    display: inline-block;
+    width: auto;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: inherit;
+  }
+  
+  .menu button:focus {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+  .site-cunt
+  {
+    margin-left:260px;
+  }
+  .download-csv
+  {
+    background-color: #ff0e6a;
+    border: none;
+    padding:15px;
+    color: white;
+    border-radius:10px;
+  }
+  .download-csv:hover
+  {
+    background-color: #a5003f;
+  }
